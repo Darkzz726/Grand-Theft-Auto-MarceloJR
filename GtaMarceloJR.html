@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gta Marcelo Jr</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main> 
+  <!-- ===== MENU INICIAL ===== -->
+  <section id="menu" class="tela ativa">
+    <h1 class="logo">
+      <img src="img/GtaMJR_logo.png" alt="GTA MarceloJr">
+    </h1>
+  
+    <!-- MENU DE DIFICULDADE -->
+    <p>Escolha a dificuldade:</p>
+    <div class="dificuldade">
+      <button id="easy">Fácil</button>
+      <button id="medium">Média</button>
+      <button id="hard">Difícil</button>
+    </div>
+  
+    <button id="btnStartMenu" class="btn-img">
+      <img src="img/iniciar_jogo.png" alt="Iniciar Jogo">
+    </button>
+  </section>
+  
+
+  <!-- ===== TELA DO JOGO ===== -->
+  <section id="game" class="tela">
+    
+    <!-- Topo -->
+    <header class="topo">
+      <h2>GTA Marcelo JR</h2>
+      <div class="pontuacao">
+        Pontuação: <span id="score">0</span>
+      </div>
+    </header>
+
+    <!-- Área do jogo -->
+    <div id="gameArea">
+      
+      <!-- Carro do jogador -->
+      <div id="playerCar"></div>
+
+      <!-- Veículos inimigos serão criados via JS -->
+    </div>
+
+    <!-- Controles -->
+    <div class="controles">
+      <button id="btnLeft">⬅️</button>
+      <button id="btnRight">➡️</button>
+    </div>
+
+    <!-- Botões gerais -->
+    <div class="acoes">
+      <button id="btnStart">Start</button>
+      <button id="btnEnd">End</button>
+      <button id="btnMenu">Menu</button>
+    </div>
+
+  </section>
+
+  <!-- ===== GAME OVER ===== -->
+  <section id="gameOver" class="tela">
+    <img src="img/game_over.png" alt="Game Over" class="game-over-img">
+    <p>Sua pontuação foi: <span id="finalScore">0</span></p>
+    <button id="btnRestart">Jogar Novamente</button>
+    <button id="btnMenuOver">Menu</button>
+  </section>
+  
+
+  <!-- JS externo -->
+  <script src="funcao.js"></script>
+  </main>
+</body>
+</html>
